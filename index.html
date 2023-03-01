@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Solicitud de asistencia especial</title>
+    <meta charset = "utf-8" />
+    <link rel = "stylesheet" href = "styles.css"/>
+  </head>
+  <body>
+    <h1 id = "title">Formulario de solicitud</h1>
+    <p id = "description">Llene el siguiente formulario si desea optar por una asistencia especial en la Escuela de Ingeniería en computación</p>
+    <form id= "survey-form">
+      <label id = "name-label" for = "name">Nombre completo: 
+          <input class= "other-line" id="name" type = "text" placeholder = "Ingrese su nombre" required />
+      </label>
+      <label id="email-label" for = "email">Correo electrónico (@estudiantec.cr): 
+          <input class= "other-line" id="email" type = "email" placeholder = "Ingrese su email" required />
+      </label>
+      <label id="number-label" for = "number">Edad: 
+          <input class= "other-line" id="number" type = "number" min = "16" max="120" placeholder = "Ingrese su edad" required />
+      </label>
+      <label class = "title-radio"> Seleccione su género </label>
+      <label class = "label-radio">
+          <input name = "gender" type = "radio" value = "male"/> Masculino
+      </label>
+      <label class = "label-radio">
+          <input name = "gender" type = "radio" value = "female"/> Femenino
+      </label class = "label-radio">
+      <label class = "label-radio">
+          <input name = "gender" type = "radio" value = "n/a"/> Prefiero no indicarlo
+      </label>
+      <label>¿En cuál área está interesado en trabajar?
+          <select class= "other-line" id = "dropdown">
+              <option value="">Seleccione un área</option>
+              <option value="1">Realidad aumentada</option>
+              <option value="2">Desarrollo de videojuegos</option>
+              <option value="3">Desarrollo web</option>
+          </select>
+      </label>
+      <label class = "title-checkbox"> Indique los cursos que ya ha aprobado 
+          <label class = "label-checkbox">
+              <input type = "checkbox" value = "1" /> Programación orientada a objetos
+          </label>
+          <label class = "label-checkbox">
+              <input type = "checkbox" value = "2" /> Requerimientos de software 
+          </label>
+          <label class = "label-checkbox">
+              <input type = "checkbox" value = "3" /> Desarrollo de páginas web
+          </label>
+          <label class = "label-checkbox">
+              <input type = "checkbox" value = "4" /> Compiladores e intérpretes 
+          </label>
+          <label class = "label-checkbox">
+              <input type = "checkbox" value = "5" /> Realidad aumentada 
+          </label>
+      </label>
+      <label for = "textarea"> Si desea agregar algún comentario o información adicional indíquelo en el siguiente espacio
+          <textarea class= "other-line" id = "textarea" placeholder = "Agregue su comentario aquí..." rows="6"></textarea>
+      </label>
+      <input type = "submit" id = "submit"/>
+    </form>
+  </body>
